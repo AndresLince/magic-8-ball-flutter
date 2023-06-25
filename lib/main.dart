@@ -21,6 +21,11 @@ class Magic8BallPage extends StatefulWidget {
 class _Magic8BallPageStage extends State<Magic8BallPage>{
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Center(
+      child: TextButton(
+        onPressed: null,
+        child: Image.asset('images/ball1.png'),
+      ),
+    );
   }
 }
