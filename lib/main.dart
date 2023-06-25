@@ -5,10 +5,22 @@ void main() {
     home: Scaffold(
       backgroundColor: Colors.blue,
       appBar: AppBar(
-        title: Text('Magic 8 ball'),
+        title: const Text('Magic 8 ball'),
         backgroundColor: Colors.blue[900],
       ),
-      body: Container(),
+      body: Magic8BallPage(),
     ),
   ));
+}
+
+class Magic8BallPage extends StatefulWidget {
+  @override
+  _Magic8BallPageStage createState() => _Magic8BallPageStage();
+}
+
+class _Magic8BallPageStage extends State<Magic8BallPage>{
+  @override
+  Widget build(BuildContext context) {
+    return Container();
+  }
 }
